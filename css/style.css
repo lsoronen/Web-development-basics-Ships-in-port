@@ -1,0 +1,68 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    padding: 1rem;
+    background: #005f73;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline-block;
+    width: 8em;
+    margin-right: var(--general-margin);
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+main#shipGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.ship-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-ships {
+    grid-column: 1/-1;
+    text-align: center;
+    color: #888;
+}
+
+footer {
+    background-color: #005f73;;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+footer p {
+    color: #fff;
+}

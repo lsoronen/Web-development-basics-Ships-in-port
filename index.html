@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ships in port</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Ships in Finnish Ports</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Ships in port</a></li>
+                <li><a href="#">API info</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div id="PortSelection">
+            <label for="portSelect">Choose a port:</label>
+            <select id="portSelect">
+                <option value="FIOUL">Oulu</option>
+                <option value="FIHEL">Helsinki</option>
+                <option value="FITKU">Turku</option>
+                <option value="FIKOK">Kokkola</option>
+                <option value="FIRAA">Raahe</option>
+                <option value="FIKTK">Kotka</option>
+                <option value="FIKEM">Kemi</option>
+            </select>
+        </div>
+        <main id="shipGrid"></main>
+        <footer>
+            <p>Footer goes here</p>
+        </footer>
+    </div>
+    <script src="js/functions.js"></script>
+</body>
+</html>
