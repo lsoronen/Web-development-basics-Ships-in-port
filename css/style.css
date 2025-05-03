@@ -82,11 +82,7 @@ div#content section {
 }
 */
 
-div#content aside {
-    flex: 0 0 20vw;
-    /*flex: 1;*/
-    /*align-items: stretch;*/
-}
+
 
 .mainContainer {
     width: 80vw;
@@ -95,7 +91,8 @@ div#content aside {
     /*flex: 1;*/
     /*flex-direction: row;*/
     align-items: stretch;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    box-sizing: border-box;
     /*padding: 1rem;
     gap: 1rem;*/
 }
@@ -107,7 +104,6 @@ main#shipGrid {
     padding: 1rem;
     gap: 1rem;
     box-sizing: border-box;
-    /*padding: 1rem;*/
 }
 
 .ship-card {
@@ -123,6 +119,12 @@ main#shipGrid {
     color: #888;
 }
 
+div#content aside {
+    flex: 0 0 20vw;
+    /*flex: 1;*/
+    /*align-items: stretch;*/
+}
+
 aside {
     /*width: 275px;*/
     margin-top: 1rem;
@@ -131,7 +133,7 @@ aside {
     background-color: #e0f7fa;
     padding: 1rem;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 8px;
     height: fit-content;
     box-sizing: border-box;
 }
@@ -171,6 +173,8 @@ footer p {
     
     .mainContainer {
         width: 100vw;
+        /*padding-right: 1rem;*/
+        /*margin: 1rem;*/
         /*flex-direction: column;*/
     }
     
@@ -181,5 +185,11 @@ footer p {
         border: 2px solid #000;*/
         margin: 1rem;
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 548px) {
+    .mainContainer {
+        padding-right: 1rem;
     }
 }
