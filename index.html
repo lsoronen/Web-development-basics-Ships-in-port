@@ -12,26 +12,30 @@
             <h1>Ships in Finnish Ports</h1>
         </header>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#">Ships in port</a></li>
                 <li><a href="#">API info</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <div id="PortSelection">
-            <label for="portSelect">Choose a port:</label>
-            <select id="portSelect">
-                <option value="FIOUL">Oulu</option>
-                <option value="FIHEL">Helsinki</option>
-                <option value="FITKU">Turku</option>
-                <option value="FIKOK">Kokkola</option>
-                <option value="FIRAA">Raahe</option>
-                <option value="FIKTK">Kotka</option>
-                <option value="FIKEM">Kemi</option>
-            </select>
-        </div>
-        <div id="Ships">
-            <main id="shipGrid"></main>
+        <div id="content">
+            <!--<section id="main">-->
+                <div class="mainContainer">
+                    <main id="shipGrid"></main>
+                </div>
+            <!--</section>-->
+            <aside>
+                <label for="portSelect">Choose a port:</label>
+                <select id="portSelect">
+                    <option value="FIOUL">Oulu</option>
+                    <option value="FIHEL">Helsinki</option>
+                    <option value="FITKU">Turku</option>
+                    <option value="FIKOK">Kokkola</option>
+                    <option value="FIRAA">Raahe</option>
+                    <option value="FIKTK">Kotka</option>
+                    <option value="FIKEM">Kemi</option>
+                </select>
+            </aside>
         </div>
         <footer>
             <p>Source: Fintraffic / digitraffic.fi, license CC 4.0 BY</p>
