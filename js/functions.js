@@ -74,12 +74,12 @@ async function loadShips(portCode) {
             const card = document.createElement('div');
             card.className = 'ship-card';
             card.innerHTML = `
-                <h2>${ship.vesselNamePrefix || ''} ${ship.vesselName}</h2>
+                <h2>${ship?.vesselNamePrefix || ''} ${ship?.vesselName || 'Unknown'}</h2>
                 <p><strong>Type:</strong> ${type}</p>
                 <p><strong>Lenght:</strong> ${len}</p>
                 <p><strong>Net Tonnage:</strong> ${netTonnage}</p>
                 <p><strong>Gross Tonnage:</strong> ${grossTonnage}</p>
-                <p><strong>Nationality:</strong> ${ship.nationality}</p>
+                <p><strong>Nationality:</strong> ${ship?.nationality || 'Unknown'}</p>
                 <p><strong>Crew:</strong> ${ship.imoInformation?.[0]?.numberOfCrew || 'N/A'}</p>
                 <p><strong>Pier:</strong> ${ship.portAreaDetails?.[0]?.berthName || 'Unknown'}</p>
                 <p><strong>With Cargo:</strong> ${hasCargo}</p>
