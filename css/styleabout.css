@@ -1,0 +1,49 @@
+
+article {
+    flex: 1 1 calc(33% - 1em);
+}
+
+article div {
+    padding-bottom: 0;
+}
+
+article a {
+    position: inherit;
+    display: inline;
+    width:fit-content;
+    margin-top: 0;
+    margin-left: 2em;
+
+}
+
+article ul {
+    list-style-type: none;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+article ul#APIlist {
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+#APIlist > li > ul > li > a {
+    all: unset;
+  }
+
+#APIlist > li > ul > li > a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 1100px) {
+    article {
+        flex: 1 1 calc(100% - 1em);
+    }
+}

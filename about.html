@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleports.css">
+    <link rel="stylesheet" href="./css/styleabout.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Info about the site</h1>
+        </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Ships in port</a></li>
+                <li><a href="./ports.html">Ports</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <section id="main">
+              <article>
+                <div>
+                  <h3>About the site</h3>
+                  <p>The website allows users to view ships in selected ports and access information about those ports. The data is retrieved from backend systems using API calls. The currently selected port is stored locally to allow user to information about the same port when coming back to the site.</p>
+                  <p>This website was created as part of the Web Development Basics course at OAMK. The goal was to learn how to develop a web page using HTML, CSS, and JavaScript, as well as how to make asynchronous requests to backend systems.</p>
+                  <a href="https://koulutushaku.oamk.fi/search.php#result-25675" target="_blank">More about the course</a>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Used APIs</h3>
+                  <p>This site uses three APIs to get the required data.</p>
+                  <ul id="APIlist">
+                    <li>
+                        <strong>Digitraffic Marine API</strong>
+                        <ul>
+                            <li>
+                                Digitraffic is a service operated by the Fintraffic offering real time traffic information. Currently the service covers road, marine and rail traffic.
+                            </li>
+                            <li>
+                                <a href="https://www.digitraffic.fi/meriliikenne/" target="_blank">Check the API site</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Wikimedia REST API</strong>
+                        <ul>
+                            <li>
+                                The Wikimedia REST API offers access to Wikimedia's content and metadata in machine-readable formats. The REST API is available for all major Wikimedia projects.
+                            </li>
+                            <li>
+                                <a href="https://www.mediawiki.org/wiki/Wikimedia_REST_API" target="_blank">Check the API site</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Cloud Translation API</strong>
+                        <ul>
+                            <li>
+                                This API integrates text translation into your website or application. It is provited by Google.
+                            </li>
+                            <li>
+                                <a href="https://cloud.google.com/translate/docs/reference/rest" target="_blank">Check the API site</a>
+                            </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Author</h3>
+                  <p>This site was created by Lauri, a student in the Oulu University of Applied Sciences.</p>
+                </div>
+              </article>  
+            </section>
+          </div>
+        <footer>
+            <p>Waiting for visits.</p>
+        </footer>
+    </div>
+    <script src="./js/about.js"></script>
+    
+</body>
+</html>
