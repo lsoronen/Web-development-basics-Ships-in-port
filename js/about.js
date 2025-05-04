@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const footer = document.querySelector("footer p");
 
-    footer.innerHTML=`You have visited this site ${visitCount} times.`
+    footer.innerHTML=`You have loaded this site ${visitCount} times.`
 });
